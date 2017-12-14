@@ -1,0 +1,60 @@
+---
+title: 2017 12 14 19:30
+author: ''
+date: '2017-12-14'
+slug: 19-30
+categories: []
+tags: []
+---
+
+
+
+# train 3
+
+```{r setup, echo=FALSE}
+library(dplyr,warn.conflicts = FALSE,quietly = TRUE,verbose = FALSE)
+library(ggplot2,warn.conflicts = FALSE,quietly = TRUE,verbose = FALSE)
+```
+
+```{r, echo=FALSE}
+ir=iris; names(ir)= c('sl' , 'sw' , 'pl' , 'pw' , 's') 
+
+ggplot(data = ir) + 
+  geom_density(aes(x=sl,fill = s),alpha = 0.65) +
+  theme_minimal()
+```
+
+# Some text 
+
+```{r, echo=FALSE}
+
+ggplot(ir, aes(x=sl, y = pl)) + 
+  geom_point(aes(color=s, size = pw)) +
+  theme_minimal()
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+My post
+
+
+
+
+
+
+
+
+
+
+
+
